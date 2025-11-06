@@ -1,4 +1,4 @@
-import DetailScreen from "@/components/tugas/DetailScreen";
+import UpdateScreen from "@/components/tugas/UpdateScreen";
 
 export default function App() {
   return (
@@ -9,7 +9,9 @@ export default function App() {
       {/*<Latihan3/>*/}
       {/*<Latihan4 />*/}
       {/*  <HomeScreen />  */}
-      <DetailScreen />
+      {/* { <DetailScreen /> } */}
+      {/* <AddScreen /> */}
+      <UpdateScreen />
     </>
   );
 }
