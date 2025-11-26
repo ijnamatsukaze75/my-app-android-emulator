@@ -2,12 +2,12 @@ import { notes } from "@/data/noteData";
 import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
-    Image,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -42,7 +42,9 @@ export default function DetailScreen() {
         </View>
       </ScrollView>
       <View style={styles.footerButtons}>
-        <TouchableOpacity style={styles.updateButton}>
+        <TouchableOpacity style={styles.updateButton}
+        onPress={() => router.push(`/update/${note?.id}`)}
+        >
           <Text style={styles.buttonText}>Update</Text>
         </TouchableOpacity>
 
